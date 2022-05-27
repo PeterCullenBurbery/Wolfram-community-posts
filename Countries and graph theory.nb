@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   2592532,      46684]
-NotebookOptionsPosition[   2475630,      44440]
-NotebookOutlinePosition[   2588647,      46598]
-CellTagsIndexPosition[   2588355,      46587]
+NotebookDataLength[   2592714,      46688]
+NotebookOptionsPosition[   2475812,      44444]
+NotebookOutlinePosition[   2588829,      46602]
+CellTagsIndexPosition[   2588537,      46591]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -38580,12 +38580,16 @@ Cell["Make a manipulate for FindShortestPath.", "Text",
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Manipulate", "[", 
+ RowBox[{"DynamicModule", "[", 
   RowBox[{
-   RowBox[{"FindShortestPath", "[", 
-    RowBox[{
-    "\[ScriptCapitalJ]", ",", "startingCountry", ",", "destinationCountry"}], 
-    "]"}], ",", 
+   RowBox[{"{", "EurasianCountries", "}"}], ",", 
+   RowBox[{
+    RowBox[{"EurasianCountries", "=", 
+     RowBox[{"VertexList", "[", "\[ScriptCapitalE]", "]"}]}], ";", 
+    RowBox[{"FindShortestPath", "[", 
+     RowBox[{
+     "\[ScriptCapitalJ]", ",", "startingCountry", ",", "destinationCountry"}],
+      "]"}]}], ",", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
@@ -38595,7 +38599,7 @@ Cell[BoxData[
            RowBox[{"\"Country\"", ",", "\"France\""}], "]"}], 
          "\"Entity[\\\"Country\\\", \\\"France\\\"]\"", "\"country\""},
         "Entity"], ",", "\"\<Starting country\>\""}], "}"}], ",", 
-     RowBox[{"VertexList", "[", "\[ScriptCapitalE]", "]"}]}], "}"}], ",", 
+     "EurasianCountries"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
@@ -38605,13 +38609,13 @@ Cell[BoxData[
            RowBox[{"\"Country\"", ",", "\"Nigeria\""}], "]"}], 
          "\"Entity[\\\"Country\\\", \\\"Nigeria\\\"]\"", "\"country\""},
         "Entity"], ",", "\"\<Destination country\>\""}], "}"}], ",", 
-     RowBox[{"VertexList", "[", "\[ScriptCapitalE]", "]"}]}], "}"}], ",", 
+     "EurasianCountries"}], "}"}], ",", 
    RowBox[{"SaveDefinitions", "->", "True"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.862660259232592*^9, 3.8626602836630716`*^9}, {
   3.862660450592391*^9, 3.862660451837737*^9}, {3.8626606737739024`*^9, 
   3.862660677497902*^9}, {3.8626608234452696`*^9, 3.862660831646205*^9}, {
-  3.862660865104225*^9, 3.862660997385722*^9}},
- CellLabel->"In[150]:=",
+  3.862660865104225*^9, 3.862660997385722*^9}, {3.8626612333081665`*^9, 
+  3.862661296835496*^9}, {3.862661375606431*^9, 3.862661388151079*^9}},
  CellID->164538142,ExpressionUUID->"5f185b48-e696-4bc7-a516-8997dcc37fa3"],
 
 Cell[BoxData[
@@ -46586,13 +46590,13 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 2587111, 46556},
- {"Your Essay Title", 2587298, 46560},
- {"AuthorName", 2587479, 46564},
- {"Abstract", 2587638, 46568},
- {"TemplateCell", 2587820, 46572},
- {"SectionHeader", 2588003, 46576},
- {"ExampleTopicSentence", 2588179, 46580}
+ {"Examples", 2587293, 46560},
+ {"Your Essay Title", 2587480, 46564},
+ {"AuthorName", 2587661, 46568},
+ {"Abstract", 2587820, 46572},
+ {"TemplateCell", 2588002, 46576},
+ {"SectionHeader", 2588185, 46580},
+ {"ExampleTopicSentence", 2588361, 46584}
  }
 *)
 (*NotebookFileOutline
@@ -46679,9 +46683,9 @@ Cell[2142594, 38553, 698, 18, 43, "Output",ExpressionUUID->"aa18075c-7f4c-43b4-b
 Cell[2143307, 38574, 253, 3, 35, "Text",ExpressionUUID->"6fdcc9cf-a0e7-4f84-84a1-a4e68512ded7",
  CellID->225716427],
 Cell[CellGroupData[{
-Cell[2143585, 38581, 1504, 33, 70, "Input",ExpressionUUID->"5f185b48-e696-4bc7-a516-8997dcc37fa3",
+Cell[2143585, 38581, 1686, 37, 98, "Input",ExpressionUUID->"5f185b48-e696-4bc7-a516-8997dcc37fa3",
  CellID->164538142],
-Cell[2145092, 38616, 330498, 5819, 32, "Output",ExpressionUUID->"06054670-a571-4598-93d7-51a8d467408e",
+Cell[2145274, 38620, 330498, 5819, 32, "Output",ExpressionUUID->"06054670-a571-4598-93d7-51a8d467408e",
  CellID->423035406]
 }, Open  ]]
 }, Open  ]]
